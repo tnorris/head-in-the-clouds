@@ -5,6 +5,8 @@
 - About half my tenure on Operations, most recent half has been on Infrastructure Services Tools Team
 - Did ITOps at `job.last`
 - Did Managed IT at `jobs[-2]`
+- First Distro: AMD K6-2 running Slackware 4
+- Current Distro: Intel i5 running OSX; 13,000 AWS instances running Ubuntu 14.04
 
 ## DevOps is How To
 - Avoid stepping on each other's toes
