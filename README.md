@@ -14,7 +14,7 @@
 
 Big focus on automation
 
-# Why Do You Want It
+# Why Do You Want DevOps
 ## Management:
 - The Industry's Best Standard
 - Cut time to resolution; with enough investment, _orders_ of magnitude.
@@ -58,13 +58,14 @@ Big focus on automation
 
 ## Identifiy the Constraint
 ###  Metrics
-#### Business projects
+#### Time Spent On Business projects
 - Features for product
 - adding a new customer-accessible version of PHP to the hosting platform
 - creating a new spamfighting service
 - getting PDF reports for clients
 
-#### Internal Projects
+#### Time Spent On Internal Projects
+These are things like...
 - improving process
 - making integration-tests faster
 - cleaning up that ENGINEERING_ONBOARDING confluence page
@@ -72,7 +73,7 @@ Big focus on automation
 - this talk
 - Root Cause Analysis
 
-#### Operational change
+#### Time Spent On Operational Change
 - rack 'n stack
 - putting servers up in a datacenter
 - running scripts to spin up cloud primitives
@@ -80,7 +81,7 @@ Big focus on automation
 - rsyncing your `.war` files and HUPping tomcat
 - giving JIRA more heap
 
-#### Toil
+#### Time Spent On Toil
 - Waste and firefighting
 - service is down
 - server is on fire
@@ -102,7 +103,7 @@ How long do I have to wait for a class of work to get gone?
 Amount of work done. Storypoints/issues/new-customers-onboarded/etc
 
 ### Frequency by request type
-This often ends up being the thing you automate first
+This is how you know what to automate first
 
 ### Frequency by root cause
 Use this to figure out what product defect is causing the most pain
@@ -115,7 +116,7 @@ Use this to figure out when you're stepping on other teams' (or even worse: cust
 - people gotta eat, meet, get interrupted by folks asking, 'hey did you get my email about the thing?', use the restroom, deal with landlord
 - less than that, and you can't really trust your metrics
 - more than that, people are going to burn out
-- If &gt; 25% of your IT or Ops teams are firefighting at any given time, something is horribly wrong (paraphrased Tom Limoncelli)
+- If &gt; 25% of your IT or Ops teams are firefighting at the same time, at any given time, something is horribly wrong (paraphrased Tom Limoncelli)
 
 #### For SRE:
 - If more than half your time is on firefighting, pull in your dev team, they get to help!
@@ -135,8 +136,39 @@ Use this to figure out when you're stepping on other teams' (or even worse: cust
 - You can use unit conversions to get from operational load to dollars/second.
 - Dollars per quarter is the 2nd most effective.
 
+# Document Common Processes
+Once your team gets into the habbit of using runbooks (and continuously improving them as things change),
+- tasks become accessible to the entire team
+- you get escalated to less often, because you can point to the docs (and say READ THE DOCS)
+
+Write runbooks for the most frequently occuring task, first. Use `/[:alpha:]*scouts/` camping rules, and Kaizen/3rd-way, when you stub your toe, fix the runbook!
+
+# Automate Common Processes
+- You *must* have runbooks before you automate.
+
 # Streamline ticket creation
-- 
+Turns out you can get fancy with JIRA tickets, requiring things like 
+- Component
+- Severity
+- Hosting Environment
+- Customer Impact
+- Customer Deadline
+
+or for a Sprint team
+- Epic
+- Sprint
+- Stakeholder
+- Release notes required?
+- (don't forget to click 'move to kanban!')
+
+People are pretty bad at remembering all these things. 
+Streamline the process by making a portal to your ticketing system.
+Start off with the most frequent tasks, that way you get
+- consistent tickets
+- reduced back-and-forth ("you didn't mark it as critical so we didn't realize the customer needs it today!")
+- reduced time-to-completion (due to the above)
+
+You don't have to go crazy and build a service here. A PoC can be done in Confluence by creating chose-your-own-adventure links to confluence pages that eventually link to Jira's `createTicket?with=url&params=to&set=your&custom=fields`
 
 # Awesome Books
 - The Phoenix Project
