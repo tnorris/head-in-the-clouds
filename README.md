@@ -16,16 +16,16 @@ Big focus on automation
 
 # Why Do You Want DevOps
 ## Management:
-- The Industry's Best Standard
-- Cut time to resolution; with enough investment, _orders_ of magnitude.
-- Better availability from your company's services
+- The Industry's Best Standard. DevOps is to IT as Lean is to Manufacturing
 - Increase throughput while reducing the inventory and operating expense (The Goal!) (reduce COGS)
+- Cut time to resolution; with enough investment, this can be _orders_ of magnitude.
+- Better availability from your company's services
 - Happier employees
 
 ## Contributors:
 - The Industry's Best Standard
 - Automate away menial tasks that eat away at your soul
-- (we have multiple products with deployment runbooks that say, `get a snack`)
+    - (we have multiple products with deployment runbooks that say, `get a snack`)
 - Reduce total number of defects
 - Ability to squish defects faster
 - Reduction of duplicated effort!
@@ -140,11 +140,13 @@ Use this to figure out when you're stepping on other teams' (or even worse: cust
 Once your team gets into the habbit of using runbooks (and continuously improving them as things change),
 - tasks become accessible to the entire team
 - you get escalated to less often, because you can point to the docs (and say READ THE DOCS)
+- tasks become consistent, which will help your team lead predict the future; you'll be able to tell your stakeholders how much work will get done today
 
 Write runbooks for the most frequently occuring task, first. Use `/[:alpha:]*scouts/` camping rules, and Kaizen/3rd-way, when you stub your toe, fix the runbook!
 
 # Automate Common Processes
 - You *must* have runbooks before you automate.
+- This usually starts off as bash-in-a-for-loop, then moves to something like puppet/ansible, then a task system, then maybe a workflow system
 
 # Streamline ticket creation
 Turns out you can get fancy with JIRA tickets, requiring things like 
@@ -168,7 +170,7 @@ Start off with the most frequent tasks, that way you get
 - reduced back-and-forth ("you didn't mark it as critical so we didn't realize the customer needs it today!")
 - reduced time-to-completion (due to the above)
 
-You don't have to go crazy and build a service here. A PoC can be done in Confluence by creating chose-your-own-adventure links to confluence pages that eventually link to Jira's `createTicket?with=url&params=to&set=your&custom=fields`
+You don't have to go crazy and build a service here (but you totally can). A PoC can be done in Confluence by creating chose-your-own-adventure links to confluence pages that eventually link to Jira's `createTicket?with=url&params=to&set=your&custom=fields`
 
 # Awesome Books
 - The Phoenix Project
