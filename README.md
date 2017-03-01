@@ -1,9 +1,8 @@
 # TODO
 - getting buyin from upper management
-- limiting work-in-progress
-- prioritization meeting
 - standardizing change requests
 - the power of charts
+- more words about Culture of Continual Experimentation and Learning
 
 # Intro
 ## Me
@@ -60,10 +59,9 @@ Big focus on automation
 ### Culture of Continual Experimentation and Learning
 - Blameless post mortems
 - Root Cause Analysis
-- Learn from your mistakes
-- Improve your processes
+- Learn from your mistakes (go over your RCAs as a team)
+- Improve your processes (make action items in your RCAs, prioritize them)
 - Get rid of processes that don't make sense
-
 
 ## Identifiy the Constraint
 ###  Metrics
@@ -145,6 +143,32 @@ Use this to figure out when you're stepping on other teams' (or even worse: cust
 - You can use unit conversions to get from operational load to dollars/second.
 - Dollars per quarter is the 2nd most effective.
 
+# IT/Ops: Get Kanban in Place
+- talk to your jira wizard, tell them you need a kanban project+board
+- NO JUMPING THE QUEUE! It's unfair to other stakeholders AND the business as a whole.
+
+# Put A Limit On Work-in-progress
+- Need buy-in from stakeholders (or their bosses)
+- You are bad at multitasking. Even if you're good at multitasking, it's still overhead.
+- ![Context Switching Chart](multitasking.png)
+- We found the a good cap to be `2*team_members`
+    - Usually turns into one ticket you're actively working on, and one you're babysitting
+
+## Benefits of limiting WIP
+- more consistent work
+- fewer errors due to scatterbrain
+
+## How to limit WIP without being lit on fire by other departments
+- Set up a prioritization meeting
+- Force stakeholders to show up to this meeting with tickets they need completed
+- Tell them how many tickets your team can get done today
+- Make them figure out what's most important to the business today
+- This gets rid of un-needed work, as stakeholders answer, "is this ticket ACTUALLY important for the business?", and find work that isn't
+
+## You're Actually Still Going To Be Lit On Fire
+- "You can only do FIVE tickets today!?" (a lot of people are on vacation last week of the year)
+- "You can't do ANY tickets today!?" ('rebootarama' style hosting-release)
+
 # Document Common Processes
 Once your team gets into the habbit of using runbooks (and continuously improving them as things change),
 - tasks become accessible to the entire team
@@ -159,6 +183,7 @@ Write runbooks for the most frequently occuring task, first. Use `/[:alpha:]*sco
 
 # Streamline ticket creation
 Turns out you can get fancy with JIRA tickets, requiring things like 
+
 - Component
 - Severity
 - Hosting Environment
@@ -166,15 +191,17 @@ Turns out you can get fancy with JIRA tickets, requiring things like
 - Customer Deadline
 
 or for a Sprint team
+
 - Epic
 - Sprint
 - Stakeholder
 - Release notes required?
 - (don't forget to click 'move to kanban!')
 
-People are pretty bad at remembering all these things. 
+People are pretty bad at remembering all these things.
 Streamline the process by making a portal to your ticketing system.
 Start off with the most frequent tasks, that way you get
+
 - consistent tickets
 - reduced back-and-forth ("you didn't mark it as critical so we didn't realize the customer needs it today!")
 - reduced time-to-completion (due to the above)
@@ -184,6 +211,7 @@ You don't have to go crazy and build a service here (but you totally can). A PoC
 # Awesome Books
 - The Phoenix Project
 - The Practice of Cloud System Administration
+- Scrum: The Art of Doing Twice the Work in Half the Time
 - Site Reliability Engineering
 
 # Awesome Talks
