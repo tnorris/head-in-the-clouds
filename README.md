@@ -1,10 +1,12 @@
 # TODO
-- getting buyin from upper management
+- summary slide to sell "Why DevOps?" to upper management
 - standardizing change requests
 - the power of charts
 - more words about Culture of Continual Experimentation and Learning
 - kanban vs scrum (infra vs dev)
-- SRE - meta devops
+- SRE - (sr what?) meta devops
+- configuration managment is amazing
+- consolidate wait time with work in progress
 
 # Intro
 ## Me
