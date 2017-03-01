@@ -3,6 +3,8 @@
 - standardizing change requests
 - the power of charts
 - more words about Culture of Continual Experimentation and Learning
+- kanban vs scrum (infra vs dev)
+- SRE - meta devops
 
 # Intro
 ## Me
@@ -118,7 +120,7 @@ Use this to figure out what product defect is causing the most pain
 ### Downstream defects (Reopened Issues, Bugs)
 Use this to figure out when you're stepping on other teams' (or even worse: customers') toes
 
-### Time tracking (IT/Ops: average 5-6hours/day, SRE: track all time on toil, Dev: sprints)
+### Time tracking (IT/Ops: average 5-6hours/day, SRE (site reliability engineer (meta devops)): track all time on toil, Dev: sprints)
 #### For Ops/IT,
 - people gotta eat, meet, get interrupted by folks asking, 'hey did you get my email about the thing?', use the restroom, deal with landlord
 - less than that, and you can't really trust your metrics
