@@ -1,3 +1,10 @@
+# TODO
+- getting buyin from upper management
+- limiting work-in-progress
+- prioritization meeting
+- standardizing change requests
+- the power of charts
+
 # Intro
 ## Me
 - Tom Norris &lt;tom.norris@acquia.com&gt; github.com/tnorris
