@@ -1,8 +1,3 @@
-# TODO
-- summary slide to sell "Why DevOps?" to upper management
-- standardizing change requests
-- the power of charts
-
 # Intro
 ## Me
 - Tom Norris &lt;tom.norris@acquia.com&gt; github.com/tnorris
