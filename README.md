@@ -149,7 +149,7 @@ Use this to figure out when you're stepping on other teams' (or even worse: cust
 ### Operational Load is the batting average of IT metrics
 - Amount of time you spend keeping your boat afloat
 - Google says cap it at 50%
-- ![Wait Time Graph](waittime.png)
+- ![Wait Time Graph](waittime.jpg)
 
 ## Put A Limit On Work-in-progress To Reduce Operational Load
 - Need buy-in from stakeholders (or their bosses)
