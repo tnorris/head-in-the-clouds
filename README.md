@@ -274,6 +274,7 @@ You don't have to go crazy and build a service here (but you totally can). A PoC
 # Resources!
 ## Books
 - The Phoenix Project
+- The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations
 - The Practice of Cloud System Administration
 - Scrum: The Art of Doing Twice the Work in Half the Time
 - Site Reliability Engineering
